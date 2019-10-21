@@ -1,0 +1,9 @@
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\obj\Debug\AutoScheduler.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\obj\Debug\AutoScheduler.csproj.GenerateResource.cache
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\obj\Debug\AutoScheduler.csproj.CoreCompileInputs.cache
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\obj\Debug\WpfApp1.exe
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\obj\Debug\WpfApp1.pdb
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\bin\Debug\WpfApp1.exe.config
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\bin\Debug\WpfApp1.exe
+C:\Users\Никита\source\repos\AutoScheduler\AutoScheduler\bin\Debug\WpfApp1.pdb
