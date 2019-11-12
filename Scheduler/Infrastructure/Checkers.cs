@@ -41,6 +41,15 @@ namespace Scheduler
             return true;
         }
 
+        public bool Firmness(string t)
+        {
+            if (t == "")
+            {
+                MessageBox.Show("Не все поля заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
+        }
 
         public bool Firmness(ComboBox t)
         {
@@ -55,7 +64,7 @@ namespace Scheduler
 
         public bool FIOvalidation(string text)
         {
-            if (!Regex.IsMatch(text, @"\w*\s\w*\s\w*"))
+            if (!Regex.IsMatch(text, @"\w+\s\w+\s\w+"))
             {
                 MessageBox.Show("Неверно заполнено поле \"ФИО\"", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -64,11 +73,21 @@ namespace Scheduler
         }
 
 
-        public bool TexboxValidation(TextBox amount)
+        public bool TexboxValidation(string amount)
         {
-            if (!Regex.IsMatch(amount.Text, @"\d*"))
+            if (!Regex.IsMatch(amount, @"\d*"))
             {
-                MessageBox.Show("В поле \"Количество\" допустимы только числа", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("В поле допустимы только числа", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
+        }
+
+        public bool IntegerValidation(int? integ)
+        {
+            if (integ==null)
+            {
+                MessageBox.Show("Не выбран курс обучения", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;

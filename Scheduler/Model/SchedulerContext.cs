@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Model
 {
-    class SchedulerContext : DbContext
+    public class SchedulerContext : DbContext
     {
         public SchedulerContext() : base("DbConnection")
         {
@@ -17,6 +17,6 @@ namespace Scheduler.Model
         public DbSet<Group> Groups { get; set; }
         public DbSet<Lector> Lectors { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
-        public DbSet<Day> Days { get; set; }
+        public DbSet<Discipline> Disciplines { get; set; }
     }
 }

@@ -9,14 +9,12 @@ namespace Scheduler.Interface
 {
     interface IAuditory
     {
-        Auditory Get(List<Auditory> Auditories, int index);
+        void Add(string number);
 
-        void Add(List<Auditory> Auditories, int number);
+        void Edit(string number, int index);
 
-        void Edit(List<Auditory> Auditories, int index, int number);
+        void DeleteByIndex(int index);
 
-        void DeleteByIndex(List<Auditory> Auditories, int index);
-
-        void DeleteLast(List<Auditory> Auditories);
+        void DeleteLast();
     }
 }

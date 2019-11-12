@@ -17,3 +17,30 @@ C:\Users\Никита\source\repos\AutoScheduler\Scheduler\obj\Debug\Scheduler.c
 C:\Users\Никита\source\repos\AutoScheduler\Scheduler\obj\Debug\Scheduler.Migrations.InitialCreate.resources
 C:\Users\Никита\source\repos\AutoScheduler\Scheduler\obj\Debug\Scheduler.Migrations.AddModelMigration.resources
 C:\Users\Никита\source\repos\AutoScheduler\Scheduler\obj\Debug\Scheduler.Migrations.AddDays.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\Scheduler.exe.config
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\Scheduler.exe
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\Scheduler.pdb
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.csprojAssemblyReference.cache
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.InitialCreate.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.AddModelMigration.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.AddDays.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Properties.Resources.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\AutoScheduler.View.FormMain.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.csproj.GenerateResource.cache
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.csproj.CopyComplete
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.exe
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.pdb
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.View.FormLectorsList.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.View.FormAuditoriesList.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.formAuditories.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.View.FormGroupsList.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.replaceLessonName.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.View.FormDisciplinesList.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.Disciplines.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.DisciplinesYet.resources
+C:\Users\user\Desktop\UCHYOBA NOUT\3 курс\ПИ\AutoScheduler-master\Scheduler\obj\Debug\Scheduler.Migrations.Lectures.resources

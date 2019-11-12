@@ -7,48 +7,16 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Model
 {
-    class Auditory : IAuditory
+    public class Auditory
     {
         public int Id { get; set; }
-        public int Number { get; set; }
+        public string Number { get; set; }
 
-        public Auditory(int number)
+        public Auditory(string number)
         {
             this.Number = number;
         }
 
-        public Auditory()
-        {
-        }
-
-        public void Add(List<Auditory> Auditories, int number)
-        {
-            Auditories.Add(new Auditory(number));
-        }
-
-        public void DeleteByIndex(List<Auditory> Auditories, int index)
-        {
-            Auditories.RemoveAt(index);
-        }
-
-        public void DeleteByNumber(List<Auditory> Auditories, int number)
-        {
-            Auditories.Remove(Auditories.First(x => x.Number == number));
-        }
-
-        public void DeleteLast(List<Auditory> Auditories)
-        {
-            Auditories.RemoveAt(Auditories.Count - 1);
-        }
-
-        public void Edit(List<Auditory> Auditories, int index, int number)
-        {
-            Auditories.Insert(index, new Auditory(number));
-        }
-
-        public Auditory Get(List<Auditory> Auditories, int index)
-        {
-            return Auditories.ElementAt(index);
-        }
+        public Auditory(){}   
     }
 }

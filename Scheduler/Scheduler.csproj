@@ -56,11 +56,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Checkers.cs" />
+    <Compile Include="Infrastructure\Checkers.cs" />
+    <Compile Include="Controller\AuditoryController.cs" />
+    <Compile Include="Controller\DisciplineController.cs" />
+    <Compile Include="Controller\GroupController.cs" />
+    <Compile Include="Controller\LectorController.cs" />
+    <Compile Include="Controller\LessonController.cs" />
+    <Compile Include="Controller\ScheduleMaker.cs" />
+    <Compile Include="Infrastructure\Individuum.cs" />
     <Compile Include="Interface\IAuditory.cs" />
     <Compile Include="Interface\IDay.cs" />
     <Compile Include="Interface\IGroup.cs" />
     <Compile Include="Interface\ILector.cs" />
+    <Compile Include="Interface\IDiscipline.cs" />
     <Compile Include="Interface\ILesson.cs" />
     <Compile Include="Migrations\201910081644165_InitialCreate.cs" />
     <Compile Include="Migrations\201910081644165_InitialCreate.designer.cs">
@@ -74,26 +82,65 @@
     <Compile Include="Migrations\201910211643055_AddDays.designer.cs">
       <DependentUpon>201910211643055_AddDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910250632257_formAuditories.cs" />
+    <Compile Include="Migrations\201910250632257_formAuditories.designer.cs">
+      <DependentUpon>201910250632257_formAuditories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910291840476_replaceLessonName.cs" />
+    <Compile Include="Migrations\201910291840476_replaceLessonName.designer.cs">
+      <DependentUpon>201910291840476_replaceLessonName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911120910145_Disciplines.cs" />
+    <Compile Include="Migrations\201911120910145_Disciplines.designer.cs">
+      <DependentUpon>201911120910145_Disciplines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911121713517_DisciplinesYet.cs" />
+    <Compile Include="Migrations\201911121713517_DisciplinesYet.designer.cs">
+      <DependentUpon>201911121713517_DisciplinesYet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911121815516_Lectures.cs" />
+    <Compile Include="Migrations\201911121815516_Lectures.designer.cs">
+      <DependentUpon>201911121815516_Lectures.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Auditory.cs" />
     <Compile Include="Model\Day.cs" />
+    <Compile Include="Model\Discipline.cs" />
     <Compile Include="Model\Group.cs" />
     <Compile Include="Model\Lector.cs" />
     <Compile Include="Model\Lesson.cs" />
     <Compile Include="Model\SchedulerContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\FormAuditoriesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAuditoriesList.Designer.cs">
+      <DependentUpon>FormAuditoriesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormGroupsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormGroupsList.Designer.cs">
+      <DependentUpon>FormGroupsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLectorsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLectorsList.Designer.cs">
+      <DependentUpon>FormLectorsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormDisciplinesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormDisciplinesList.Designer.cs">
+      <DependentUpon>FormDisciplinesList.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormСatalogue.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormСatalogue.Designer.cs">
-      <DependentUpon>FormСatalogue.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Migrations\201910081644165_InitialCreate.resx">
       <DependentUpon>201910081644165_InitialCreate.cs</DependentUpon>
@@ -104,6 +151,21 @@
     <EmbeddedResource Include="Migrations\201910211643055_AddDays.resx">
       <DependentUpon>201910211643055_AddDays.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910250632257_formAuditories.resx">
+      <DependentUpon>201910250632257_formAuditories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910291840476_replaceLessonName.resx">
+      <DependentUpon>201910291840476_replaceLessonName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911120910145_Disciplines.resx">
+      <DependentUpon>201911120910145_Disciplines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911121713517_DisciplinesYet.resx">
+      <DependentUpon>201911121713517_DisciplinesYet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911121815516_Lectures.resx">
+      <DependentUpon>201911121815516_Lectures.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -113,11 +175,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormAuditoriesList.resx">
+      <DependentUpon>FormAuditoriesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormGroupsList.resx">
+      <DependentUpon>FormGroupsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLectorsList.resx">
+      <DependentUpon>FormLectorsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormDisciplinesList.resx">
+      <DependentUpon>FormDisciplinesList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormСatalogue.resx">
-      <DependentUpon>FormСatalogue.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -135,9 +206,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -9,16 +9,13 @@ namespace Scheduler.Interface
 {
     interface ILector
     {
-        Lector Get(List<Lector> Lectors, int index);
 
-        Lector GetByFIO(List<Lector> Lectors, string FIO);
+        void Add(string FIO);
 
-        void Add(List<Lector> Lectors, string FIO);
+        void Edit(string FIO, int index);
 
-        void Edit(List<Lector> Lectors, string FIO, int index);
+        void DeleteByIndex(int index);
 
-        void DeleteByIndex(List<Lector> Lectors, int index);
-
-        void DeleteLast(List<Lector> Lectors);
+        void DeleteLast();
     }
 }

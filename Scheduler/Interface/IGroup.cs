@@ -9,14 +9,12 @@ namespace Scheduler.Interface
 {
     interface IGroup
     {
-        Group Get(List<Group> Groups, int index);
+        void Add(string GroupName, int Year);
 
-        void Add(List<Group> Groups, string GroupName, int Year);
+        void Edit(string name, int year, int index);
 
-        void Edit(List<Group> Groups, string name, int year, int index);
+        void DeleteByIndex(int index);
 
-        void DeleteByIndex(List<Group> Groups, int index);
-
-        void DeleteLast(List<Group> Groups);
+        void DeleteLast();
     }
 }
